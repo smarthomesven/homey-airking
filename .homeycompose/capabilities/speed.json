@@ -1,0 +1,9 @@
+{
+  "type": "boolean",
+  "title": { 
+    "en": "Speed"
+  },
+  "getable": false,
+  "setable": true,
+  "uiComponent": "button"
+}

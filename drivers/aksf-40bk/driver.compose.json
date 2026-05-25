@@ -1,0 +1,34 @@
+{
+  "name": {
+    "en": "Standing fan AKSF-40BK",
+    "nl": "Statiefventilator AKSF-40BK"
+  },
+  "class": "fan",
+  "capabilities": [
+    "onoff",
+    "speed",
+    "timer"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "getable": false,
+      "setable": true
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "infrared"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "add_device"
+    }
+  ]
+}

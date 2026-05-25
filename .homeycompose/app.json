@@ -1,0 +1,36 @@
+{
+  "id": "nl.air-king",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "AirKing"
+  },
+  "description": {
+    "en": "Serious about air"
+  },
+  "brandColor":"#68ACAF",
+  "category": [
+    "climate"
+  ],
+  "source": "https://github.com/smarthomesven/homey-airking",
+  "bugs": {
+    "url": "https://github.com/smarthomesven/homey-airking/issues"
+  },
+  "permissions": [
+    "homey:wireless:ir"
+  ],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Sven Serlier",
+    "email": "sven@dypodex.com"
+  }
+}

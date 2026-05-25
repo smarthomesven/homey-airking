@@ -1,0 +1,26 @@
+{
+    "actions": [
+        {
+            "id": "speed",
+            "title": {
+                "en": "Speed",
+                "nl": "Snelheid"
+            },
+            "hint": {
+                "en": "This changes the fan to the next fan speed. For example: if the fan speed is set to 2, running this Flow card changes it to 3. When fan speed 5 is set, running this Flowcard will set it back to speed 1.",
+                "nl": "Deze Flowcard stelt de ventilator in op de volgende ventilatorsnelheid. Bijvoorbeeld: als de ventilator ingesteld is op snelheid 2, wordt de snelheid na het uitvoeren van deze Flowcard veranderd naar 3. Zodra snelheid 5 is bereikt, begint de ventilator weer bij snelheid 1."
+            }
+        },
+        {
+            "id": "timer",
+            "title": {
+                "en": "Timer",
+                "nl": "Timer"
+            },
+            "hint": {
+                "en": "This Flowcard changes the fan to the next timer option, similar to pressing the Timer button on the remote",
+                "nl": "Deze Flowcard stelt de ventilator in op de volgende timeroptie, vergelijkbaar met het indrukken van de Timer-knop op de afstandsbediening"
+            }
+        }
+    ]
+}

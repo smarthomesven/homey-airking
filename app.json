@@ -1,0 +1,147 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.air-king",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "AirKing"
+  },
+  "description": {
+    "en": "Serious about air"
+  },
+  "brandColor": "#68ACAF",
+  "category": [
+    "climate"
+  ],
+  "source": "https://github.com/smarthomesven/homey-airking",
+  "bugs": {
+    "url": "https://github.com/smarthomesven/homey-airking/issues"
+  },
+  "permissions": [
+    "homey:wireless:ir"
+  ],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Sven Serlier",
+    "email": "sven@dypodex.com"
+  },
+  "flow": {
+    "actions": [
+      {
+        "id": "speed",
+        "title": {
+          "en": "Speed",
+          "nl": "Snelheid"
+        },
+        "hint": {
+          "en": "This changes the fan to the next fan speed. For example: if the fan speed is set to 2, running this Flow card changes it to 3. When fan speed 5 is set, running this Flowcard will set it back to speed 1.",
+          "nl": "Deze Flowcard stelt de ventilator in op de volgende ventilatorsnelheid. Bijvoorbeeld: als de ventilator ingesteld is op snelheid 2, wordt de snelheid na het uitvoeren van deze Flowcard veranderd naar 3. Zodra snelheid 5 is bereikt, begint de ventilator weer bij snelheid 1."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aksf-40bk"
+          }
+        ]
+      },
+      {
+        "id": "timer",
+        "title": {
+          "en": "Timer",
+          "nl": "Timer"
+        },
+        "hint": {
+          "en": "This Flowcard changes the fan to the next timer option, similar to pressing the Timer button on the remote",
+          "nl": "Deze Flowcard stelt de ventilator in op de volgende timeroptie, vergelijkbaar met het indrukken van de Timer-knop op de afstandsbediening"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aksf-40bk"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Standing fan AKSF-40BK",
+        "nl": "Statiefventilator AKSF-40BK"
+      },
+      "class": "fan",
+      "capabilities": [
+        "onoff",
+        "speed",
+        "timer"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "getable": false,
+          "setable": true
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "infrared"
+      ],
+      "images": {
+        "small": "/drivers/aksf-40bk/assets/images/small.png",
+        "large": "/drivers/aksf-40bk/assets/images/large.png",
+        "xlarge": "/drivers/aksf-40bk/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "add_device"
+        }
+      ],
+      "id": "aksf-40bk"
+    }
+  ],
+  "capabilities": {
+    "speed": {
+      "type": "boolean",
+      "title": {
+        "en": "Speed"
+      },
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button"
+    },
+    "timer": {
+      "type": "boolean",
+      "title": {
+        "en": "Timer"
+      },
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button"
+    }
+  },
+  "signals": {
+    "ir": {
+      "aksf40bk": {
+        "type": "prontohex",
+        "repetitions": 5,
+        "cmds": {
+          "power": "0000 006D 0000 000C 002F 0011 002F 0011 0011 002F 002F 0011 002F 0011 0011 002F 0011 002F 0011 002F 0011 002F 0011 002F 002F 0011 0011 012F",
+          "speed": "0000 006D 0000 000C 002F 0011 002F 0011 0011 002F 002F 0011 002F 0011 0011 002F 0011 002F 0011 002F 002F 0011 0011 002F 0011 002F 0011 012F",
+          "timer": "0000 006D 0000 000C 002F 0011 002F 0011 0011 002F 002F 0011 002F 0011 0011 002F 0011 002F 0011 002F 0011 002F 0011 002F 0011 002F 002F 0111"
+        }
+      }
+    }
+  }
+}
