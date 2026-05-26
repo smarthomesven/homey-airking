@@ -1,6 +1,6 @@
 {
   "id": "nl.air-king",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
@@ -13,7 +13,7 @@
   "description": {
     "en": "Serious about air"
   },
-  "brandColor":"#68ACAF",
+  "brandColor": "#68ACAF",
   "category": [
     "climate"
   ],
