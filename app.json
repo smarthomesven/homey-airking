@@ -40,8 +40,8 @@
       {
         "id": "speed",
         "title": {
-          "en": "Speed",
-          "nl": "Snelheid"
+          "en": "Next fan speed",
+          "nl": "Volgende ventilatorsnelheid"
         },
         "hint": {
           "en": "This changes the fan to the next fan speed. For example: if the fan speed is set to 2, running this Flow card changes it to 3. When fan speed 5 is set, running this Flowcard will set it back to speed 1.",
@@ -58,8 +58,8 @@
       {
         "id": "timer",
         "title": {
-          "en": "Timer",
-          "nl": "Timer"
+          "en": "Next timer option",
+          "nl": "Volgende timeroptie"
         },
         "hint": {
           "en": "This Flowcard changes the fan to the next timer option, similar to pressing the Timer button on the remote",
@@ -92,6 +92,9 @@
           "getable": false,
           "setable": true
         }
+      },
+      "infrared": {
+        "satelliteMode": true
       },
       "platforms": [
         "local"

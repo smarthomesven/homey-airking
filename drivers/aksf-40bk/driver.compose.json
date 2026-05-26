@@ -15,6 +15,9 @@
       "setable": true
     }
   },
+  "infrared": {
+    "satelliteMode": true
+  },
   "platforms": [
     "local"
   ],
