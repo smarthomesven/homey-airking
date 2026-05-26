@@ -1,9 +1,11 @@
 {
   "type": "boolean",
   "title": { 
-    "en": "Speed"
+    "en": "Speed",
+    "nl": "Snelheid"
   },
   "getable": false,
   "setable": true,
-  "uiComponent": "button"
+  "uiComponent": "button",
+  "icon": "/assets/speed.svg"
 }

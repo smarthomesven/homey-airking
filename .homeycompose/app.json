@@ -21,6 +21,7 @@
   "bugs": {
     "url": "https://github.com/smarthomesven/homey-airking/issues"
   },
+  "homeyCommunityTopicId": 155337,
   "permissions": [
     "homey:wireless:ir"
   ],

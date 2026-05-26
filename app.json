@@ -22,6 +22,7 @@
   "bugs": {
     "url": "https://github.com/smarthomesven/homey-airking/issues"
   },
+  "homeyCommunityTopicId": 155337,
   "permissions": [
     "homey:wireless:ir"
   ],
@@ -115,11 +116,13 @@
     "speed": {
       "type": "boolean",
       "title": {
-        "en": "Speed"
+        "en": "Speed",
+        "nl": "Snelheid"
       },
       "getable": false,
       "setable": true,
-      "uiComponent": "button"
+      "uiComponent": "button",
+      "icon": "/assets/speed.svg"
     },
     "timer": {
       "type": "boolean",
@@ -128,7 +131,8 @@
       },
       "getable": false,
       "setable": true,
-      "uiComponent": "button"
+      "uiComponent": "button",
+      "icon": "/assets/timer.svg"
     }
   },
   "signals": {
