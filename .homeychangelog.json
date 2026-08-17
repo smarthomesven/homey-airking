@@ -7,5 +7,8 @@
   },
   "1.0.2": {
     "en": "Updated Flow card names on request by Athom"
+  },
+  "1.0.3": {
+    "en": "Fixed an issue where Flowcards would not work correctly in case of multiple paired devices"
   }
 }
