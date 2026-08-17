@@ -16,17 +16,6 @@ class AKSF40BKDevice extends ProntohexDevice {
     
     // Add any additional initialization here
     this.log('AKSF40BK device initialized');
-    
-    // Optional: You can also send commands directly
-    // await this.sendCommand('row4_btn1');
-    const speed = this.homey.flow.getActionCard('speed');
-    speed.registerRunListener(async (args, state) => {
-      await this.sendCommand('speed');
-    });
-    const timer = this.homey.flow.getActionCard('timer');
-    timer.registerRunListener(async (args, state) => {
-      await this.sendCommand('timer');
-    });
   }
 }
 
