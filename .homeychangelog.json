@@ -10,5 +10,8 @@
   },
   "1.0.3": {
     "en": "Fixed an issue where Flowcards would not work correctly in case of multiple paired devices"
+  },
+  "1.0.4": {
+    "en": "Made the app compatible with firmware versions prior to 12.4.0"
   }
 }
